@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small World Trips|Home</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+   
+
+    <div class="navbar-fixed">
+    <nav class="nav-switch transparent z-depth-0">
+      <div class="nav-wrapper">
+      <div class="container">
+        <a href="#!" class="brand-logo"></a>
+        <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Favorites</a></li>
+		      <li><a class="modal-trigger" href="#modal1">Add/View Destination</a></li>
+        </ul>
+       
+        </div>
+      </div>
+    </nav>
+  </div>
+   <ul class="side-nav" id="mobile-demo">
+          <li><a class ="black-text" href="#">Home</a></li>
+          
+          <li><a class ="black-text" href="#">Saved Places</a></li>
+		  
+		  <li><a class="black-text modal-trigger" href="#modal1">Add/View Destination</a></li>		  
+        
+        </ul>
+
+
+    <div class="slider" data-indicators="true">
+      <ul class="slides">
+        <li>
+          <img id="cityimg" src="https://lh3.googleusercontent.com/p/AF1QipN4C2TAFS7sYW-ToIr05-WgwsSh8Kfegq9EpQge=w934-h550-k"> <!-- random image -->
+          <div class="caption center-align">
+			<h2 id="weatherid"></h2>            
+			<h3>What's Your Location?</h3>
+            <form>
+			  <div class="input-field white" id="locationField">
+					<input id="search" type="search">
+					<!-- <input class="label-icon right" for="search"> -->
+					<i class="material-icons right">search</i>
+					<i class="material-icons right"></i>
+			  </div>
+  
+            <div class="col s12 m12 l2">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Search
+              <i class="material-icons center">search</i>
+            </button>
+            </div> 
+            <!-- </div> -->
+              
+            </form>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+
+    <!--===== PAGE CONTENT BEGIN ======-->
+
+      <section id="foodAndDrink" class="container">
+       <!-- <h2>Food & Drink</h2>  -->
+        <div class="row" id="fooddrink">
+          <div class="col m3">
+          <img class="responsive-img" src="https://lh3.googleusercontent.com/p/AF1QipPrgyj4vgzNSaJrjRo8y4OVirgdMeWypAS4h7bA=w183-h183-k" alt="" style="width: 183px; height: 183px;">
+          <h5>Grub Burger Bar</h5>
+          <h5>Rating: 4.5</h5>
+          <!-- <p>(Description)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique modi earum culpa ab reiciendis, qui saepe, quod animi voluptatem enim necessitatibus nemo sint id impedit magni, blanditiis cumque architecto.
+          </p> -->
+        <!--   <a class="waves-effect waves-light btn red lighten-2"><i class="material-icons center">favorite_border</i></a>
+          <a class="waves-effect waves-light btn"><i class="material-icons center">call</i></a> -->
+          </div>
+          <div class="col m3">
+          <img class="responsive-img" src="https://lh3.googleusercontent.com/p/AF1QipOYlEFu5FjPKuyPxLjRYhSEylEXrgR3kBpeM1a3=w183-h183-k" alt="" style="width: 183px; height: 183px;">
+          <h5>Filipino Food Store & Gift Shop</h5>
+          <h5>Rating: 5</h5>
+          <!-- <p>(Description)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique modi earum culpa ab reiciendis, qui saepe, quod animi voluptatem enim necessitatibus nemo sint id impedit magni, blanditiis cumque architecto.
+          </p> -->
+         <!--  <a class="waves-effect waves-light btn red lighten-2"><i class="material-icons center">favorite_border</i></a>
+          <a class="waves-effect waves-light btn"><i class="material-icons center">call</i></a> -->
+          </div>
+          <div class="col m3">
+          <img class="responsive-img" src="https://lh3.googleusercontent.com/p/AF1QipOQEWeOIoiDagwm2-XKgv-SoHzvok4UyF2-k4Yi=w183-h183-k" alt="" style="width: 183px; height: 183px;">
+          <h5>504 Bar & Grill</h5>
+          <h5>Rating: 4.5</h5>
+          <!-- <p>(Description)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique modi earum culpa ab reiciendis, qui saepe, quod animi voluptatem enim necessitatibus nemo sint id impedit magni, blanditiis cumque architecto.
+          </p> -->
+        <!--   <a class="waves-effect waves-light btn red lighten-2"><i class="material-icons center">favorite_border</i></a>
+          <a class="waves-effect waves-light btn"><i class="material-icons center">call</i></a> -->
+          </div>
+          <div class="col m3">
+          <img class="responsive-img" src="https://lh3.googleusercontent.com/p/AF1QipP0NJOMzBtqvF1g22TySevpMoPcDBhv6nxHERw=w183-h183-k" alt="" style="width: 183px; height: 183px;">
+          <h5>Dallas Beer Kitchen</h5>
+          <h5>Rating: 4.5</h5>
+          <!-- <p>(Description)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non similique modi earum culpa ab reiciendis, qui saepe, quod animi voluptatem enim necessitatibus nemo sint id impedit magni, blanditiis cumque architecto.
+          </p> -->
+         <!--  <a class="waves-effect waves-light btn red lighten-2"><i class="material-icons center">favorite_border</i></a>
+          <a class="waves-effect waves-light btn"><i class="material-icons center">call</i></a> -->
+          </div>
+          
+      </section>
+
+
+    <footer id="footerFix" class="page-footer">
+      <div class="container">
+        
+        <div class="center-align">
+          
+          © 2017 Small World Trips
+          1-800-SMALLWO
+          
+          
+        </div>
+      </footer>
+
+      <div class="fixed-action-btn button-collapse" href="#" data-activates="mobile-demo" >
+        <a class="btn-floating btn-large red waves-effect waves-light">
+          <i class="large material-icons">menu</i>
+        </a>
+    </div>
+
+	<!-- Modal for Add Destination -->
+	
+		<!-- Modal Structure -->
+			<div id="modal1" class="modal modal-fixed-footer">
+				<div class="modal-content">
+				<h4>Current Trips Scheduled</h4>
+				<div>
+					<table class="table table-hover table-responsive">
+						<thead>
+							<tr>
+							<th>Destination</th>
+							<th>Start Date (MM/DD/YY)</th>
+							<th>End Date (MM/DD/YY)</th>
+							<th>Edit</th>
+							</tr>
+						</thead>
+						<tbody id="display">
+						</tbody>
+					</table>
+				</div>
+					<h4>Add Destination</h4>
+					<p>Enter destination and start/end dates</p>
+					<!-- Sign-up Form (note the various input "types")-->
+					<form role="form">
+					  <div class="form-group">
+						<label for="destination-input">Destination:</label>
+						<input class="form-control" id="destinationinput" type="text">
+					  </div>
+					  <div class="form-group">
+						<label for="startdate-input">Start Date:</label>
+						<input class="form-control" id="startdateinput" type="text">
+					  </div>
+					  <div class="form-group">
+						<label for="enddate-input">End Date:</label>
+						<input class="form-control" id="enddateinput" type="text">
+					  </div>					  
+<!--					  <button class="btn btn-danger" id="add-user" type="submit">Save</button> -->
+					</form>
+				</div>
+			<div class="modal-footer">
+				<a href="#!" id="addTrip" class="modal-action modal-close waves-effect waves-green btn-flat ">Save</a>
+			</div>
+			</div>
+	
+	<!-- Modal for Add Destination -->
+	
+      <!-- moment.js CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+      <!-- Firebase Reference -->
+      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+      <!-- materialize CDN js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Google Places API -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-9YSa9Ou2sYYULk422kXQz5lWrz0cqUk&libraries=places">
+	  </script>  	  
+      <script src="assets/js/app.js" type="text/javascript"></script>	
+      <script src="assets/js/addupdatefb.js" type="text/javascript"></script>		  
+    </body>
+  </html>
