@@ -140,47 +140,37 @@ var map;
 			console.log("This is the value of review:... " + results[i].reviews);
 			console.log("********************************");
 
-			//var n = $("<p>").text(results[i].name).attr("class", "fancy");
-			//var r = $("<p>").text("Rating: " + results[i].rating);
-			//var a = $("<p>").text("Address: " + results[i].formatted_address);
-			//var h = $("<p>").text("Open now: " + results[i].opening_hours.open_now);
-
-			$(".name").text(results[i].name);
+			$(".name").text(results[i].name).attr("class", "fancy");
 			$(".address").html("<strong>Address: </strong>" + results[i].formatted_address);
-			$(".rating").html("Rating: " + results[i].rating);
+			$(".rating").html("<strong>Rating: </strong>" + results[i].rating);
 
 
 			if(results[i].opening_hours.open_now) {
-				$(".hours").html("Open now: Yes");
+				$(".hours").html("<strong>Open now:</strong> Yes");
 			} else {
-				$(".hours").text("Open now: No");
+				$(".hours").html("<strong>Open now:</strong> No");
 			}
 
-			// Creating and storing an image tag
-			//var topicImageDiv = $("<div>");
-			//topicImageDiv.attr("class", "col m3");
-			//var topicImage = $("<img>");
-			//topicImage.attr("class", "responsive-img places-img");
-			// Setting the src attribute of the image to a property pulled from searchPlacesArray
-			//topicImage.attr("src", results[i].photos[0].getUrl({'maxWidth': 183, 'maxHeight': 183})); 
-			//topicImage.attr('style', "width: 183px; height: 183px;");
-			// Adding attributes to the image tag 
-			
-			if (results[i].rating > 4.2) {
-	//			topicImageDiv.append(topicImage);
-			//	topicImageDiv.append(n);
-			//	topicImageDiv.append(r);
-			//	topicImageDiv.append(a);
-			//	topicImageDiv.append(h);
+//			$("<button>").
 
-				// appending the topicImage to the HTML page in the "#fooddrink" section
-			//	$("#fooddrink").append(topicImageDiv);
+			
+			if (results[i].rating > 4.1) {
 				console.log("topicImageDiv");
 				$("#foodReviews").empty();
 				$("#foodReviews").append("Reviews go here");
+
+
 
 
 			} //closes if
 		} //closes for
 	  } //closes if
 	} //closes callback
+
+//button click to write a review
+//$("#writeReviewButton").on("click", function() {
+//	what do you do???
+// 
+//      });
+
+

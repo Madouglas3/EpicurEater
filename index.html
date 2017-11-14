@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Food</title>
+    <title>EpicurEater</title>
 <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
       <div class="container">
         <a href="#!" class="brand-logo"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="indexk.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="indexFaves.html">Favorites</a></li>
         </ul>
       </div>
@@ -30,20 +30,17 @@
     </nav>
     </div>
 
-<!--   <ul class="side-nav" id="mobile-demo">
-          <li><a class ="black-text" href="#">Home</a></li>
-          <li><a class ="black-text" href="#">Saved Places</a></li>
-<!-         <li><a class="black-text modal-trigger" href="#modal1">Add/View Destination</a></li>      
-->        
-        </ul> -->
-
 <!-- main image and headline -->
     <div class="slider" data-indicators="true">
       <ul class="slides">
         <li>
-          <img id="cityimg" src="https://lh3.googleusercontent.com/p/AF1QipN4C2TAFS7sYW-ToIr05-WgwsSh8Kfegq9EpQge=w934-h550-k"> <!-- random image -->
+         <img id="cityimg" src="https://lh3.googleusercontent.com/p/AF1QipN4C2TAFS7sYW-ToIr05-WgwsSh8Kfegq9EpQge=w934-h550-k"> <!-- random image -->
           <div class="caption center-align">
-            <h3>Food for thought</h3>
+            <div class="heads">
+              <h2>EpicurEater</h2>
+              <hr>
+              <h5>Read and write retaurant reviews</h5>
+            </div>
             <form>
               <div class="input-field white" id="locationField">
               <input id="search" type="search">
@@ -67,6 +64,7 @@
         <p class="address"></p>
         <p class="rating"></p>
         <p class="hours"></p>
+        <a href="/auth/google"><button id="writeReviewButton">Sign In with Google to write a review</button></a>
       </div>
       <div id="mapInformation" class="col m6">
         <div id="map"></div>

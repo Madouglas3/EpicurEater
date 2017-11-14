@@ -1,22 +1,18 @@
-#LOGO{
-	
-	width:200px;
-	float: left;
-	position: absolute;
-	top:10px;
-}
-
-/*shifts content down to clear logo */
-#tone{
-	margin-top:80px;
-}
-
 nav {
 	color: white;
 }
 
 nav .brand-logo {
 	z-index:5;
+}
+
+#locationField {
+	margin-top: 40px;
+}
+
+.heads {
+	background-color: black;
+	padding: 5px;
 }
 
 #foodAndDrink {
@@ -56,28 +52,12 @@ nav .brand-logo {
 	z-index:5;
 }
 
-/*.nav-switch.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2) !important;
-}
-
-.nav-switch.scrolled a {
-	color: #000 !important;
-}*/
-
 .places-img {
 	margin: 5px;
 	border: 5px;
 	height: 183px;
 	width: 183px;
 }
-
-h3 {
-	background-color: red;
-	width: 50%
-}
-
 
 /* on indexFaves */
 h4 {
