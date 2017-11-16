@@ -1,0 +1,66 @@
+nav {
+	color: white;
+}
+
+nav .brand-logo {
+	z-index:5;
+}
+
+#locationField {
+	margin-top: 40px;
+}
+
+.heads {
+	background-color: black;
+	padding: 5px;
+}
+
+#foodAndDrink {
+	display: none;
+	padding: 10px 0 0 10px;
+	background-color: #ddd;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#map {
+	height: 200px;
+	width: 100%;
+}
+
+.fancy{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#footerFix {
+	color: black;
+	background-color: #fff;
+	box-shadow: 1px 0px 1px 1px rgba(1,2,1,1);
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#center {
+	text-align: center;
+}
+
+.navbar-fixed {
+	position: absolute;
+	z-index:5;
+}
+
+.places-img {
+	margin: 5px;
+	border: 5px;
+	height: 183px;
+	width: 183px;
+}
+
+/* on indexFaves */
+h4 {
+	background-color: black;
+	margin: 10px, 10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EpicurEater</title>
+<!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<!-- CSS Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
+  </head>
+  <body>
+   
+<!-- navigation bar -->
+    <div class="navbar-fixed">
+    <nav class="nav-switch transparent z-depth-0">
+      <div class="nav-wrapper">
+      <div class="container">
+        <a href="#!" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="indexFaves.html">Favorites</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    </div>
+
+<!-- main image and headline -->
+    <div class="slider" data-indicators="true">
+      <ul class="slides">
+        <li>
+         <img id="cityimg" src="https://storage.googleapis.com/lg_meetup_images/street-food-tracking.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <div class="heads">
+              <h2>EpicurEater</h2>
+              <hr>
+              <h5>Read and write retaurant reviews</h5>
+            </div>
+            <form>
+              <div class="input-field white" id="locationField">
+              <input id="search" type="search">
+                <!-- don't need this
+                <input class="label-icon right" for="search"> 
+                <i class="material-icons right">search</i>
+                <i class="material-icons right"></i> -->
+              </div>          
+            </form>
+          </div>
+        </li>
+     </ul>
+    </div>
+
+
+<!-- page content (will be used more on second page) -->
+  <section id="foodAndDrink" class="container">
+    <div class="row" id="fooddrink">
+      <div id="foodInformation" class="col m6">
+        <p class="name"></p>
+        <p class="address"></p>
+        <p class="rating"></p>
+        <p class="hours"></p>
+        <a href="/auth/google"><button id="writeReviewButton">Sign In with Google to write a review</button></a>
+      </div>
+      <div id="mapInformation" class="col m6">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="row" id="fooddrinkreviews">
+      <div id="foodReviews" class="col m12"></div>
+    </div>  
+  </section>
+
+
+<!-- footer -->
+  <footer id="footerFix" class="page-footer">
+    <div class="container">
+      <div class="center-align">
+        © 2017 EpicurEater      
+      </div>
+    </div>
+  </footer>
+
+
+<!-- scripts -->
+<!-- moment.js CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!-- materialize CDN js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!-- Google Places API -->
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6X3gZo6jEBL8xMZlRxKxrbW8wn0NhCg&libraries=places" type="text/javascript"></script>
+<!-- JS link -->
+      <script src="public/assets/js/app.js" type="text/javascript"></script>  
+
+</body>
+</html>

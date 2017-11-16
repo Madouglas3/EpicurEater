@@ -1,0 +1,93 @@
+#LOGO{
+	
+	width:200px;
+	float: left;
+	position: absolute;
+	top:10px;
+}
+
+/*shifts content down to clear logo */
+#tone{
+
+	margin-top:80px;
+
+}
+nav {
+	color: white;
+}
+
+nav .brand-logo {
+	z-index:5;
+
+/*}
+#button1 {
+  float: right !important;
+  text-align: center;
+}
+#button2 {
+  float: left !important;
+  text-align: center;
+}*/
+#foodAndDrink {
+	padding: 35px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#footerFix {
+	color: black;
+	background-color: #fff;
+	box-shadow: 1px 0px 1px 1px rgba(1,2,1,1);
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#center {
+	text-align: center;
+}
+
+.navbar-fixed {
+	position: absolute;
+	z-index:5;
+}
+
+.nav-switch.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2) !important;
+}
+
+.nav-switch.scrolled a {
+	color: #000 !important;
+}
+
+.places-img {
+	margin: 5px;
+	border: 5px;
+	height: 183px;
+	width: 183px;
+}
+
+
+/* ===== IPAD Portrait ==== */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+
+}
+
+/* ===== IPAD Pro ==== */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait)  {
+}
